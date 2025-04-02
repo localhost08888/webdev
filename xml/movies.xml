@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Mayanagari_CD_Store>
+    <Classical>
+        <Movie>
+            <Movie_Name>Mughal-e-Azam</Movie_Name>
+            <Release_Year>1960</Release_Year>
+        </Movie>
+        <Movie>
+            <Movie_Name>Pakeezah</Movie_Name>
+            <Release_Year>1972</Release_Year>
+        </Movie>
+    </Classical>
+    
+    <Action>
+        <Movie>
+            <Movie_Name>Sholay</Movie_Name>
+            <Release_Year>1975</Release_Year>
+        </Movie>
+        <Movie>
+            <Movie_Name>Dhoom</Movie_Name>
+            <Release_Year>2004</Release_Year>
+        </Movie>
+    </Action>
+    
+    <Horror>
+        <Movie>
+            <Movie_Name>Raaz</Movie_Name>
+            <Release_Year>2002</Release_Year>
+        </Movie>
+        <Movie>
+            <Movie_Name>1920</Movie_Name>
+            <Release_Year>2008</Release_Year>
+        </Movie>
+    </Horror>
+</Mayanagari_CD_Store>
