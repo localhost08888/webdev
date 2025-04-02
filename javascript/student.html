@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+     
+</head>
+<body onload="hideImageOnLoad()">
+
+    <h1>Student Name and Image Interaction</h1>
+
+    <label for="studentName">Enter Student Name:</label>
+    <input type="text" id="studentName" placeholder="Enter name" onblur="handleBlur()" onkeyup="validateName()" />
+    <br><br>
+
+    <img id="image" src="student.png" alt="Sample Image" onmouseover="enlargeImage()" onmouseout="resetImage()" onclick="clickImage()" onmouseup="mouseUp()" />
+    <br><br>
+     
+
+    <script>
+        function validateName() 
+        {
+            const nameField = document.getElementById("studentName");
+            const name = nameField.value;
+
+            if (name.trim() !== "") 
+            {
+                nameField.style.color = "red";
+                nameField.style.fontSize = "18px";
+            }
+        }
+
+        function handleBlur() 
+        {
+            const nameField = document.getElementById("studentName");
+            document.getElementById("image").style.display = "block";
+        }
+
+        function enlargeImage()
+         {
+            document.getElementById("image").style.width = "150px";
+            document.getElementById("image").style.height = "150px";
+        }
+
+        function resetImage()
+         {
+            document.getElementById("image").style.width = "100px";
+            document.getElementById("image").style.height = "100px";
+        }
+
+        function clickImage() 
+        {
+            document.getElementById("image").style.width = "200px";
+            document.getElementById("image").style.height = "200px";
+        }
+
+        function mouseUp()
+         {
+            document.getElementById("image").style.width = "150px";
+            document.getElementById("image").style.height = "150px";
+        }
+
+        function hideImageOnLoad() 
+        {
+            document.getElementById("image").style.display = "none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <input type="text" id="userInput" placeholder="Enter text">
+    <button onclick="formatText()">Format Text</button>
+    
+    
+    <div id="output"></div>
+
+
+
+    <script>
+        function formatText() 
+        {
+            let text = document.getElementById("userInput").value;
+        
+            document.getElementById("output").innerHTML = `
+                <b>${text}</b> (Bold) <br>
+                <i>${text}</i> (Italic) <br>
+                <u>${text}</u> (Underline) <br>
+                <s>${text}</s> (Strikethrough) <br>
+                <a href="#">${text}</a> (Hyperlink)
+            `;
+        }
+    </script>
+</body>
+</html>

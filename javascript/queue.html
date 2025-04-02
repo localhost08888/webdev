@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h2>FIFO Queue Implementation</h2>
+    <input type="text" id="userInput" placeholder="Enter element">
+    <button onclick="enqueue()">Enqueue</button>
+    <button onclick="dequeue()">Dequeue</button>
+    <div id="output" style="margin-top: 10px; font-weight: bold;">Queue: </div>
+
+
+    <script>
+        let queue = [];  
+
+        function enqueue()
+         {
+            let input = document.getElementById("userInput").value;
+
+                queue.push(input);  
+                // document.getElementById("userInput").value = "";  
+                displayQueue();
+         }
+
+        function dequeue()
+         {
+            if (queue.length > 0)
+             {
+                queue.shift();  
+                displayQueue();
+            } 
+            else 
+            {
+                alert("Queue is empty!");
+            }
+        }
+
+        function displayQueue() 
+        {
+             document.getElementById("output").innerText = "Queue: " + queue.join(" - ") || "Empty";
+        }
+
+    </script>
+</body>
+</html>
